@@ -8,7 +8,7 @@ import _thread
 
 #import Adafruit_DHT
 lock_msg = ' '
-mqtt_topic = "lockgab"
+mqtt_topic = "lock"
 #mqtt_broker_ip = "broker.emqx.io"
 sto_aprendo = False
 mqtt_broker_ip = "192.168.1.89"

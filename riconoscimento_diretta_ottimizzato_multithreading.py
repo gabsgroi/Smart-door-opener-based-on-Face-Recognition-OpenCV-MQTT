@@ -12,7 +12,7 @@ from threading import Thread
 from imutils.video import VideoStream
 
 
-mqtt_topic = "lockgab"
+mqtt_topic = "lock"
 #mqtt_broker_ip = "broker.emqx.io"
 mqtt_broker_ip = "192.168.1.89"
 GPIO.setwarnings(False)
