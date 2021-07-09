@@ -18,7 +18,7 @@ mqtt_broker_ip = "192.168.1.89"
 GPIO.setwarnings(False)
 client = mqtt.Client()
 client.connect(mqtt_broker_ip, 1883)
-class posizione (Thread):
+class videodiretta (Thread):
 	def __init__(self, name):
 		Thread.__init__(self)
 		self.name = name
@@ -81,7 +81,7 @@ def recognize (rgb):
 print("[INFO] loading encodings...")
 data = pickle.loads(open("/home/salvo/Scrivania/definitivo/Face-recognition-door-opener-raspberry-pi/python_face_recognition_door_opener_raspberry_pi/encodings.pickle", "rb").read())
 
-thread1 = posizione ("rilevamento")
+thread1 = videodiretta ("rilevamento")
 thread1.daemon =True
 thread1.start()
 time.sleep(6)
